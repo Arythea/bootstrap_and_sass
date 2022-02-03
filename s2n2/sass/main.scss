@@ -1,0 +1,47 @@
+// custom variables
+$primary:       #5265E1;
+$secondary:     #FA5959;
+$display-font-weight: 400;
+$btn-padding-y: .5rem;
+$btn-padding-x: 1.5rem;
+$navbar-nav-link-padding-x: 1rem !default;
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// custom css
+body {font-family: 'Rubik', sans-serif !important;}
+.navbar {text-transform: capitalize;}
+h1 {font-weight: 700;}
+
+.special-bg{
+    position: absolute;
+    height: 25vw;
+    background-color: hsl(232, 69%, 60%);
+    z-index: -1;
+    width: 150%;
+    border-radius: 20rem;
+}
+.main-bg{
+    top: -7vw;
+    transform: translateY(60%);
+    left: 25%;
+}
+
+.features-bg {
+    width: 150%;
+    border-radius: 20rem;
+    top: -12vw;
+    transform: translateY(60%);
+    right: 37%;
+}
+
+#myTab {border-width: 0;}
+#myTab li a {border-width: 0;}
+#myTab li a {border-bottom: 1px solid gray ;}
+#myTab li a.active {border-color: $secondary; border-bottom-width: 3px;}
+
+.accordion-flush > .accordion-item:first-child {border-top: 1px solid rgba(0,0,0,0.125);}
+.accordion-button::after {background-image: url('../imgs/icon-arrow.svg');}
+
+.bg-footer {background-color: hsl(229, 31%, 21%);}
